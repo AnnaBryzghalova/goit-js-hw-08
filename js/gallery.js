@@ -85,7 +85,7 @@ const gallery = document.querySelector('ul.gallery');
 gallery.insertAdjacentHTML('beforeend', renderGalleryItems(images));
 gallery.addEventListener('click', onGalleryClick);
 const lightbox = basicLightbox.create(
-  `<img src="${images[0].preview}" id="lightbox-image">`
+  `<img src="${images[0].preview}" id="fullsize-image">`
 );
 
 function onGalleryClick(event) {
@@ -101,7 +101,7 @@ function onGalleryClick(event) {
 }
 
 function openModal(src, alt) {
-  const lightboxImage = lightbox.element().querySelector('#lightbox-image');
+  const lightboxImage = lightbox.element().querySelector('#fullsize-image');
   lightboxImage.src = src;
   lightboxImage.alt = alt;
   lightbox.show();
