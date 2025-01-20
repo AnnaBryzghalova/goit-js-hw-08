@@ -4,7 +4,7 @@
 }*/
 
 .gallery {
-  margin: auto;
+  margin: 24px auto;
   width: 1128px;
   padding: 0;
   display: flex;
